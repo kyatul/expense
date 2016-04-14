@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9f000000"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="#dfdfdf" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fafafa"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/black"
+                android:textSize="40sp"
+                android:padding="15sp"
+                 />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvAreYouSure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you sure ?"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:padding="20sp" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#fafafa"
+                android:weightSum="100"
+                android:layout_marginTop="2sp">
+                <TextView
+                    android:id="@+id/tvDelCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center_horizontal"
+                    android:textSize="30sp"
+                    android:textColor="@android:color/white"
+                    android:text="Cancel"
+                    android:background="@color/dialog"
+                    android:padding="15sp"/>
+                <TextView
+                    android:id="@+id/tvDelOK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center_horizontal"
+                    android:textSize="30sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="1sp"
+                    android:text="OK"
+                    android:background="@color/dialog"
+                    android:padding="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9f000000">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="#fafafa"
+        android:layout_marginTop="60sp"
+        android:layout_marginLeft="60sp"
+        >
+
+        <TextView
+            android:id="@+id/tvSelectCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="#fafafa"
+            android:layout_marginBottom="2dp"
+            android:textColor="@android:color/black"
+            android:gravity="center_horizontal"
+            android:text="Select Currency"
+            android:visibility="gone"/>
+
+        <ListView
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:background="#fafafa"
+            android:layout_below="@id/tvSelectCurrency"
+            android:id="@+id/lvCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#dfdfdf"
+            android:dividerHeight="4px"
+            android:layout_above="@+id/tvCancelCurrency"/>
+
+
+        <TextView
+            android:id="@id/tvCancelCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Back"
+            android:background="@color/dialog"
+            android:layout_alignParentBottom="true"
+            android:padding="10sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Expense Box</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="nav_drawer_item">
+        <item >History</item>
+        <item >Budget</item>
+        <item >Recent</item>
+        <item >Settings</item>
+        <item >Rate</item>
+    </string-array>
+
+    <string-array name="nav_drawer_icons">
+        <item >@drawable/nav_history</item>
+        <item >@drawable/nav_budget</item>
+        <item >@drawable/nav_recent</item>
+        <item >@drawable/nav_setting</item>
+        <item >@drawable/nav_rate</item>
+    </string-array>
+
+    <string-array name="recentlist">
+        <item>Today</item>
+        <item>Yesterday</item>
+        <item>Last 10 Transactions</item>
+    </string-array>
+
+    <string-array name="recentlistValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+
+    <string-array name="currencylist">
+
+        <item>Afghani</item>
+        <item>Baht</item>
+        <item>Cedis</item>
+        <item>Colon</item>
+        <item>Dollar</item>
+        <item>Dong</item>
+        <item>Euro</item>
+        <item>Guilder</item>
+        <item>Hryvna</item>
+        <item>Kip</item>
+        <item>Lempira</item>
+        <item>Naira</item>
+        <item>Peso</item>
+        <item>Pound</item>
+        <item>Pula</item>
+        <item>Quetzal</item>
+        <item>Rial</item>
+        <item>Riel</item>
+        <item>Rupee</item>
+        <item>Shekel</item>
+        <item>Shilling</item>
+        <item>Tughrik</item>
+        <item>Won</item>
+        <item>Yen</item>
+
+    </string-array>
+
+    <string-array name="currencylistCodes">
+
+        <item>\u60b</item>
+        <item>\ue3f</item>
+        <item>\ua2</item>
+        <item>\u20a1</item>
+        <item>\u24</item>
+        <item>\u20ab</item>
+        <item>\u20ac</item>
+        <item>\u192</item>
+        <item>\u20b4</item>
+        <item>\u20ad</item>
+        <item>\u4c</item>
+        <item>\u20a6</item>
+        <item>\u20b1</item>
+        <item>\ua3</item>
+        <item>\u50</item>
+        <item>\u51</item>
+        <item>\ufdfc</item>
+        <item>\u17db</item>
+        <item>\u20B9</item>
+        <item>\u20aa</item>
+        <item>\u53</item>
+        <item>\u20ae</item>
+        <item>\u20a9</item>
+        <item>\ua5</item>
+
+    </string-array>
+
+
+
+</resources>

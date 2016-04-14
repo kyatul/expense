@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color1">
+
+
+    <RelativeLayout
+        android:id="@+id/rlHeadCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color2"
+        android:paddingBottom="25sp"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:paddingTop="25sp">
+
+        <TextView
+            android:id="@+id/tvCategoryHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Category"
+            android:textColor="@color/color0"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:layout_below="@id/rlHeadCategory"
+        android:background="@color/color0"></View>
+
+    <TextView
+        android:id="@+id/tvAddCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textSize="25sp"
+        android:padding="10sp"
+        android:textColor="#fafafa"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dialog"
+        />
+    <ListView
+        android:layout_above="@id/tvAddCategory"
+        android:layout_below="@id/view1"
+        android:id="@+id/lvCategoryEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:divider="@color/color0"
+        android:dividerHeight="4px"
+        android:longClickable="true"></ListView>
+
+
+</RelativeLayout>

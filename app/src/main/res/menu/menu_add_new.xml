@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myappmenu="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_save"
+        myappmenu:showAsAction="always|withText"
+        android:icon="@drawable/ic_launcher"
+        android:title="Save"/>
+
+
+    <item
+        android:id="@+id/action_cancel"
+        myappmenu:showAsAction="always|withText"
+        android:icon="@drawable/ic_launcher"
+        android:title="Cancel"/>
+
+</menu>

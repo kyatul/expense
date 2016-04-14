@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/color1"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rlHeadMonthDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50sp"
+        android:paddingBottom="50sp"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:background="@color/color2"
+        >
+
+        <TextView
+            android:id="@+id/tvCategoryHistoryDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60sp"
+            android:text="Food and Drinks"
+            android:textColor="@color/color0"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@id/rlHeadMonthDetail"
+        android:layout_width="match_parent"
+        android:layout_height="6px"
+        android:background="@color/color0"
+        ></View>
+    <ListView
+        android:id="@+id/lvHistoryDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:divider="@color/color0"
+        android:longClickable="true"
+        android:dividerHeight="6px"></ListView>
+</LinearLayout>

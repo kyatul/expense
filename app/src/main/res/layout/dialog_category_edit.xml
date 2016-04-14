@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#Bf000000">
+
+    <LinearLayout
+        android:layout_marginLeft="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="#aaaaaa"
+        >
+
+        <ImageView
+            android:id="@+id/ivCatEdit"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/add_new"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#fafafa">
+            <EditText
+                android:id="@+id/etCatEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="25sp"
+                android:hint="Enter category name"
+                android:inputType="textCapWords"
+                android:layout_marginTop="15sp"
+                android:textColor="@android:color/black"
+                android:padding="5sp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2sp"
+            android:background="#fafafa"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/tvCatEditSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/color1"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Save"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvCatEditDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1sp"
+                android:layout_weight="50"
+                android:background="@color/color1"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Delete"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

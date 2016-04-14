@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/lvAbove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/color2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="100dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+
+            <EditText
+                android:textColor="@color/color0"
+                android:textColorHint="@color/color0"
+                android:id="@+id/etAmount"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="amount"
+                android:inputType="numberDecimal"
+                android:focusableInTouchMode="false"
+                android:textSize="85dp"
+                android:background="#00000000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/color0"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="40dp"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:textColorHint="@color/color0"
+                    android:textColor="@color/color0"
+                    android:id="@+id/etCategory"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Start typing category"
+                    android:textSize="45dp"
+                    android:inputType="textCapWords"
+                    android:background="#00000000"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/color0"></LinearLayout>
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/ivNewCategoryAccept"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/nav_yes"
+                android:visibility="gone"
+                android:layout_marginBottom="20sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/tvPick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="45dp"
+            android:paddingTop="25dp"
+            android:text="       OR \n PICK ONE"
+            android:paddingBottom="45sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <TextView
+                android:textColor="#ffffff"
+                android:id="@+id/tvFinalCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="90"
+                android:layout_margin="12sp"
+                android:textSize="25sp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/ivCategoryCancel"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="10"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/nav_no"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lvBelow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color3">
+
+        <ListView
+            android:id="@+id/lvCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/color0"
+            android:dividerHeight="6px"
+            android:paddingLeft="25sp"
+            android:paddingRight="25sp"
+            android:visibility="visible"/>
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter some description"
+            android:layout_margin="10sp"
+            android:textSize="45sp"
+            android:textColor="@color/color0"
+            android:textColorHint="@color/color0"
+            android:inputType="textCapWords"
+            android:background="#00000000"
+            android:paddingTop="65sp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60sp"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivSave"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="10"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/yes"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tvSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:gravity="center_horizontal"
+                    android:textSize="45dp"
+                    android:layout_marginTop="15sp"
+                    android:textColor="@color/color0"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivCancel"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="10"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/no"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tvCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/color0"
+                    android:layout_marginTop="15sp"
+                    android:textSize="45dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

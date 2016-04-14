@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:padding="40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12 November 2014"
+            android:textColor="#ffffff"
+            android:textSize="40dp"/>
+
+
+        <TextView
+            android:id="@+id/lvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:textColor="@color/color0"
+            android:text="This is the description of the expense that have been made"
+            android:textSize="40dp"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="70"
+        android:paddingLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lvExpenseDetail"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rs. 565"
+            android:textSize="40dp"/>
+        <TextView
+            android:id="@+id/lvID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="blank"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

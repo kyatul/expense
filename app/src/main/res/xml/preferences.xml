@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:title="General Settings">
+        <ListPreference
+            android:key="prefCurrency"
+            android:title="Currency"
+            android:summary="Select your currency"
+            android:entries="@array/currencylist"
+            android:entryValues="@array/currencylistCodes" />
+
+        <ListPreference
+            android:key="prefRecent"
+            android:title="Recent Transactions"
+            android:entries="@array/recentlist"
+            android:entryValues="@array/recentlistValues" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Expenses">
+        <Preference
+            android:key="prefCategory"
+            android:title="Customize Categories" />
+    </PreferenceCategory>
+</PreferenceScreen>
