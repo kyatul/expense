@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "678835537399",
+    "firebase_url": "https://expense-box.firebaseio.com",
+    "project_id": "expense-box",
+    "storage_bucket": "expense-box.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678835537399:android:9eb45d0601bb0534",
+        "android_client_info": {
+          "package_name": "com.bigdreamslab.expensemanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678835537399-75rmmff3o1ia06jjmjdhvr78bf7gqgeh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJl0nKNSmdov5Q7Zo3cs8TXfKkt-vxZeA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
