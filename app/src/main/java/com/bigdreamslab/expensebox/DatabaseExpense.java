@@ -49,7 +49,7 @@ public class DatabaseExpense {
                     + KEY_TIME + " TEXT NOT NULL, "
                     + KEY_DAY + " TEXT NOT NULL, "
                     + KEY_MONTH + " TEXT NOT NULL, "
-                    + KEY_YEAR + " TEXT NOT NULL"
+                    + KEY_YEAR + " TEXT NOT NULL, "
                     + KEY_RANDOM_1 + " TEXT , "
                     + KEY_RANDOM_2 + " TEXT  );");
         }

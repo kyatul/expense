@@ -44,7 +44,7 @@ public class DatabaseCategory {
                     + KEY_CATEGORY_ICON + " TEXT NOT NULL, "
                     + KEY_CATEGORY_BUDGET + " INTEGER NOT NULL, "
                     + KEY_RANDOM_1 + " TEXT , "
-                    + KEY_RANDOM_2 + " TEXT  ");
+                    + KEY_RANDOM_2 + " TEXT ); ");
         }
 
         @Override
